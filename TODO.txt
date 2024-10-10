@@ -1,0 +1,22 @@
+In Logger
+    1. add mutex to contructor
+    2. try removing mutex in Logger::log() function
+
+Give string(strerr(errno)) whenever possible
+
+Remove extra header files and comment its use
+
+Know about extern, is it used correctly in this project?
+
+
+TEST FAILED: 
+
+    User 1 shared a file
+    User 1 stop sharing file
+    User 2 list_files g  => tracker will response "img.png"
+    User 2 download file => segfault because there is no ip:port at last
+
+Assumtion 1:
+
+    If someone has even a single piece of file then tracker will that user as he is sharing a file
+    But that doesn't mean user will be able to download entire file
